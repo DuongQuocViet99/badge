@@ -36,8 +36,8 @@ export default function App() {
             <HStack spacing={0.5}>
               <TbCircleCheck fontSize='20px' color='#3DD1F2' />
               <TbBolt fontSize='20px' color='#F2CE16' />
-              <TbAtom fontSize='20px' color='#88898C' />
-              <TbBox fontSize='20px' color='#88898C' />
+              <TbAtom fontSize='20px' color='#88898C' className='checkIconInfinity' />
+              <TbBox fontSize='20px' color='#88898C' className='checkIconInfinity' />
               <TbCloud fontSize='20px' color='#66E4F2' />
             </HStack>
           </HStack>
