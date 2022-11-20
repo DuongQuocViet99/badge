@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* check icon Infinity */
-.checkIconInfinity {
+/* icon Infinity */
+.iconInfinity {
   animation-name: colorInfinity;
   animation-duration: 1.2s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 @keyframes colorInfinity {
   0%    {color: #E372F2;}
@@ -14,4 +15,64 @@
   60%   {color: #04D99D;}
   80%   {color: #F26BAA;}
   100%  {color: #F2B705;}
+}
+
+/* icon Infinity Rotate */
+.iconInfinityRotate {
+  animation-name: colorInfinityRotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes colorInfinityRotate {
+  0%    {color: #F28705; transform: rotate(0deg);}
+  20%   {color: #3DD1F2; transform: rotate(72deg);}
+  40%   {color: #E372F2; transform: rotate(144deg);}
+  60%   {color: #04D99D; transform: rotate(216deg);}
+  80%   {color: #F2B705; transform: rotate(288deg);}
+  100%  {color: #F26BAA; transform: rotate(360deg);}
+}
+
+/* icon Infinity for SVG */
+.iconInfinitySVG {
+  animation-name: colorInfinitySVG;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.iconInfinityRotateSVG {
+  animation-name: colorInfinityRotateSVG;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes colorInfinitySVG {
+  0%    {filter: invert(49%) sepia(93%) saturate(1291%) hue-rotate(4deg) brightness(101%) contrast(96%);}
+  20%   {filter: invert(81%) sepia(19%) saturate(4023%) hue-rotate(156deg) brightness(97%) contrast(95%);}
+  40%   {filter: invert(77%) sepia(34%) saturate(7220%) hue-rotate(234deg) brightness(94%) contrast(103%);}
+  60%   {filter: invert(64%) sepia(27%) saturate(5403%) hue-rotate(121deg) brightness(104%) contrast(97%);}
+  80%   {filter: invert(78%) sepia(40%) saturate(1931%) hue-rotate(357deg) brightness(96%) contrast(98%);}
+  100%  {filter: invert(78%) sepia(34%) saturate(7227%) hue-rotate(295deg) brightness(98%) contrast(93%);}
+}
+@keyframes colorInfinityRotateSVG {
+  0%    {filter: invert(49%) sepia(93%) saturate(1291%) hue-rotate(4deg) brightness(101%) contrast(96%); transform: rotate(0deg);}
+  20%   {filter: invert(81%) sepia(19%) saturate(4023%) hue-rotate(156deg) brightness(97%) contrast(95%); transform: rotate(72deg);}
+  40%   {filter: invert(77%) sepia(34%) saturate(7220%) hue-rotate(234deg) brightness(94%) contrast(103%); transform: rotate(144deg);}
+  60%   {filter: invert(64%) sepia(27%) saturate(5403%) hue-rotate(121deg) brightness(104%) contrast(97%); transform: rotate(216deg);}
+  80%   {filter: invert(78%) sepia(40%) saturate(1931%) hue-rotate(357deg) brightness(96%) contrast(98%); transform: rotate(288deg);}
+  100%  {filter: invert(78%) sepia(34%) saturate(7227%) hue-rotate(295deg) brightness(98%) contrast(93%); transform: rotate(360deg);}
+}
+
+/* react icon */
+.reactIcon {
+  color: #3DD1F2;
+  animation-name: reactIcon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes reactIcon {
+  from  {transform: rotate(0deg);}
+  to    {transform: rotate(360deg);}
 }
